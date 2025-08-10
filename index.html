@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="">
+  <meta name="keywords" content="TS, Teleoperation, Force Feedback, Data Collection, Robotics">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TS</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Title Omitted For Submission</h1>
+          <h4 class="title is-4 conference"></h4>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <p>Author list omitted for submission</p></span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Arxiv Link. -->
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Github Link. -->
+              <span class="link-block">
+                <a href="https://github.com/hidden-submission/Teleoperation-System"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Github</span>
+                  </a>
+              </span>
+              <!-- Hardware Link. -->
+              <span class="link-block">
+                <a href="https://github.com/hidden-submission/Teleoperation-System/Hardware/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-cogs"></i>
+                  </span>
+                  <span>Hardware</span>
+                </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop content"> 
+      <div class="columns interpolation-panel">
+        <div class="column is-1"></div>
+        <div class="column is-10 vid">
+          <video poster="" autoplay muted controls playsinline height="100%" loop>
+            <source src="./static/videos/main.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="column is-1"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const video = document.querySelector("video");
+    video.currentTime = 96; // Устанавливаем начальную позицию на 96 секунд
+  });
+</script>
+
+<!--
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-steve">
+          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/IMG_7009.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-chair-tp">
+          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/IMG_7009.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-shiba">
+          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/IMG_7009.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-fullbody">
+          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/IMG_7009.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-blueshirt">
+          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/IMG_7009.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-mask">
+          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/IMG_7009.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-coffee">
+          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/IMG_7009.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-toby">
+          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
+            <source src="./static/videos/IMG_7009.MOV"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+-->
+
+
+<section class="section">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Teleoperation System* Overview</h2>
+      <p>*name omitted for submission</p>
+      <p>TS is an innovative teleoperation system designed to streamline the collection of high-quality datasets for training robots, particularly for manual and bimanual tasks. Built on a joint-matching strategy, it enables users to intuitively control a robot by mirroring its joint movements.</p>
+
+      <h5>Key Features</h5>
+      <ul>
+          <li><strong>Force Feedback</strong>: TS incorporates a force feedback mechanism that provides users with tactile sensations corresponding to the forces experienced by the robot, enhancing precision and intuitiveness during operation.</li>
+          <li><strong>Adjustable Sensitivity Modes</strong>: The system offers customizable sensitivity levels, allowing users to tailor control precision to suit tasks of varying complexity.</li>
+          <li><strong>User-Friendly Data Recording Interface</strong>: An integrated interface simplifies the process of recording datasets, making data collection for imitation learning fast and efficient.</li>
+      </ul>
+
+      <h5>Design and Accessibility</h5>
+      <p>TS is engineered for reliability, cost-effectiveness, and ease of reproduction. This makes it an accessible tool not only for well-funded research laboratories but also for startups and individual researchers passionate about advancing robotics through imitation learning.</p>
+
+      <h5>Adaptability</h5>
+      <p>While currently optimized for the UR (Universal Robots) manipulator, TS’s modular architecture allows it to be reconfigured for use with other robotic platforms, including humanoid systems. This flexibility broadens its range of applications.</p>
+
+      <h5>Proven Effectiveness</h5>
+      <p>A series of experiments has demonstrated TS’s ability to effectively perform complex bimanual tasks. These results highlight its potential to accelerate research in robotics by providing a reliable tool for data collection and the development of new algorithms.</p>
+
+      <p>TS offers a powerful solution for those working to advance robotic systems, combining intuitive control, affordability, and adaptability. It stands as a valuable asset in the evolution of robot learning technologies.</p>
+  </div>
+
+  <div class="container is-max-desktop content">
+    <div class="columns interpolation-panel">
+      <div class="column is-4 vid">
+        <img src="./static/pics/1.jpg">
+      </div>
+      <div class="column is-4 vid">
+        <img src="./static/pics/2.jpg">
+      </div>
+      <div class="column is-4 vid">
+        <img src="./static/pics/3.jpg">
+      </div>
+    </div>
+  </div>
+
+<section class="section" id="Example Demonstrations">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Example Demonstrations</h2>
+    <div id="tabBox2">
+      <div class="tabs is-boxed">
+        <ul>
+          <li id="clickDefault" class="tablinks is-active" onclick="openTab(event, 'extab1', 'tabBox2')"><a>1</a></li>
+          <li class="tablinks" onclick="openTab(event, 'extab2', 'tabBox2')"><a>2</a></li>
+          <li class="tablinks" onclick="openTab(event, 'extab3', 'tabBox2')"><a>3</a></li>
+        </ul>
+      </div>
+      <div id="extab1" class="container tabcontent">
+        <h2 class="subtitle is-5" style="text-align:keft;">Water and Croissant Breakfast</h2>
+        <div class="container is-max-desktop content"> 
+          <div class="columns interpolation-panel">
+            <div class="column is-4 vid">
+              <video poster="" autoplay controls muted playsinline height="100%">
+                <source src="./static/videos/ex2.mp4"
+                        type="video/mp4">
+            </div>
+            <!--<div class="column is-3 vid">
+              <video poster="" controls muted playsinline height="100%">
+                <source src="./static/videos/ex2_x4.mp4"
+                        type="video/mp4">
+            </div>-->
+          </div>
+        </div>
+      </div>
+      <div id="extab2" class="container tabcontent">
+        <h2 class="subtitle is-5" style="text-align:left;">Buckwheat Pouring</h2>
+        <div class="container is-max-desktop content"> 
+          <div class="columns interpolation-panel">
+            <div class="column is-6 vid">
+              <video poster="" autoplay controls muted playsinline height="100%">
+                <source src="./static/videos/ex1.mp4"
+                        type="video/mp4">
+            </div>
+            <!--<div class="column is-6 vid">
+              <video poster="" controls muted playsinline height="100%">
+                <source src="./static/videos/ex1_x4.mp4"
+                        type="video/mp4">
+            </div>-->
+          </div>
+        </div>
+      </div>
+      <div id="extab3" class="container tabcontent">
+        <h2 class="subtitle is-5" style="text-align:left;">Cherry Pick and Place</h2>
+        <div class="container is-max-desktop content"> 
+          <div class="columns interpolation-panel">
+            <div class="column is-6 vid">
+              <video poster="" autoplay controls muted playsinline height="100%">
+                <source src="./static/videos/ex3.mp4"
+                        type="video/mp4">
+            </div>
+            <!--<div class="column is-6 vid">
+              <video poster="" controls muted playsinline height="100%">
+                <source src="./static/videos/ex1_x4.mp4"
+                        type="video/mp4">
+            </div>-->
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+
+
+<section class="section" id=">Build your own TS">
+  <div class="container is-max-desktop content">
+    <h2 class="title">Build Your Own TS</h2>
+    <p>If you are interested in building your own TS, check out our <a href="https://github.com/hidden-submission/Teleoperation-System/Hardware/">Hardware & Assembly</a> instructions.</p>
+  </div>
+</section>    
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre>
+      <code>
+        Omitted for submission
+      </code>
+    </pre>
+  </div>
+</section>
+
+<section id="Contact" class="section" >
+  <div class="container is-max-desktop content">
+    <h2 class="title">Contact</h2>
+    <p>Omitted for submission</p>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            Template borrowed from <a
+              href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
