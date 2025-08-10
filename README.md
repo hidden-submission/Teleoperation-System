@@ -9,7 +9,7 @@ Code, 3D models, electronic components, and ready-to-use microcontroller firmwar
 
 ### Hardware & Assembly Tutorial
 
-TS is easy to put together with our [Hardware & Assembly Tutorial](https://hidden-submission.github.io/Teleoperation-System/Hardware) videos and guide. Check it out to get started!
+The tutorial is omitted for submission, but you can explore it after the paper is published! We offer a complete materials list and a clear video guide to assemble TS from the ground up.
 
 ### Citation
 
