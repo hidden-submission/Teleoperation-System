@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel", "pip>=21.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# See https://setuptools.pypa.io/en/latest/userguide/quickstart.html for more project configuration options.
+name = "teleoperation_system"
+version = "2.0"
+requires-python = ">=3.8"
+dependencies = [
+    # General
+    "pykernel",
+    "ipywidgets",
+    "pyserial",
+    
+    # UR robots control
+    "ur-rtde",
+    
+    # Cameras
+    "matplotlib",
+    "pyrealsense2",
+    "opencv-contrib-python",
+    
+    # Data collection
+    "numpy>=1.17",
+    "scipy",
+    "pyarrow>=15.0.0",
+    "dill>=0.3.0,<0.3.9",
+    "pandas",
+    "requests>=2.32.2",
+    "tqdm>=4.66.3",
+    "xxhash",
+    "multiprocess<0.70.17",
+    "fsspec[http]>=2023.1.0,<=2025.3.0",
+    "huggingface-hub>=0.24.0",
+    "packaging",
+    "pyyaml>=5.1",
+    "jsonlines>=4.0.0",
+    "av>=14.2.0",
+    "pillow",
+    "deepdiff>=7.0.1,<9.0.0",
+    "Jinja2",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
